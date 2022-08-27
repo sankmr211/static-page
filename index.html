@@ -21,7 +21,7 @@
     
         <div>
            +91 <input type="text" id="numsend" placeholder="enter number" class="wtsfield"> 
-            <button onclick="whatsappshare">share</button> 
+            <button onclick="whatsappshare()">share</button> 
         </div>
 
 </body>
@@ -30,7 +30,7 @@
     let num=document.querySelector("#numsend").value
     function whatsappshare(){
         if(num){
-            location="https://wa.me/"+"91"+num+"?text=Send20%a20%quote"
+            location="https://wa.me/"+"91"+num+"?text=hi"
         }else{
             alert("enter number")
         }

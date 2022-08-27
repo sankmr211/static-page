@@ -5,21 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>click to</title>
+    <style>
+        .wtsfield{
+
+        }
+    </style>
 </head>
 <body>
 
-    <div>
-        <p><a href="tel:+919042136400">call</a></p>
-    </div>
-    
         <div>
-            <a href="https://wa.me/919042136400">Send Message</a>
+         <p><a href="tel:+919042136400">call</a></p>
+
+         <a href="https://wa.me/919042136400">Send Message</a>
         </div>
     
-    
+        <div>
+           +91 <input type="text" id="numsend" placeholder="enter number" class="wtsfield"> 
+            <button onclick="whatsappshare">share</button> 
+        </div>
 
-  <div>
-    <a href="https://wa.me/919042136400?text=Send20%a20%quote">Send Message</a>
-  </div>
 </body>
+
+<script>
+    let num=document.querySelector("#numsend").value
+    function whatsappshare(){
+        if(num){
+            location="https://wa.me/"+"91"+num+"?text=Send20%a20%quote"
+        }else{
+            alert("enter number")
+        }
+    }
+</script>
 </html>
